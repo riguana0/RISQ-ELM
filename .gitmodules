@@ -1,0 +1,6 @@
+[submodule "risq"]
+	path = risq
+	url = https://github.com/quantumcircuits/risq.git
+[submodule "dwave-elm"]
+	path = dwave-elm
+	url = https://github.com/quantumcircuits/dwave-elm.git
