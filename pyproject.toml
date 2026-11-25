@@ -1,0 +1,29 @@
+[project]
+name = "risq-elm-notebooks"
+version = "0.0.0"
+requires-python = ">=3.10"
+
+[dependency-groups]
+dev = [
+    "dwave-elm",
+    "ipykernel",
+    "remoteobj",
+    "risq",
+]
+
+[tool.uv]
+package = false          # the root itself isn't a package, it only aggregates
+
+[tool.uv.sources]
+risq-arm  = { path = "risq/software/arm", editable = true }
+risq-remoteobj = { path = "risq/software/common/remoteobj", editable = true }
+risq = { workspace = true }
+remoteobj = { workspace = true }
+dwave-elm = { workspace = true }
+
+[tool.uv.workspace]
+members = [
+    "risq/software/arm",
+    "risq/software/common/remoteobj",
+    "dwave-elm",
+]
