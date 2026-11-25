@@ -1974,6 +1974,7 @@ dev = [
     { name = "ipykernel" },
     { name = "remoteobj" },
     { name = "risq" },
+    { name = "uuid6" },
 ]
 
 [package.metadata]
@@ -1984,6 +1985,7 @@ dev = [
     { name = "ipykernel" },
     { name = "remoteobj", editable = "risq/software/common/remoteobj" },
     { name = "risq", editable = "risq/software/arm" },
+    { name = "uuid6", specifier = ">=2025.0.1" },
 ]
 
 [[package]]

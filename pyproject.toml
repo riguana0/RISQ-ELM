@@ -9,6 +9,7 @@ dev = [
     "ipykernel",
     "remoteobj",
     "risq",
+    "uuid6>=2025.0.1",
 ]
 
 [tool.uv]
